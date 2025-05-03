@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: uil-speller
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: streamlit run main.py --server.port $PORT --server.enableCORS false
